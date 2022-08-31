@@ -1,0 +1,405 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>영주시청</title>
+	<link rel="stylesheet" type='text/css' href="./css/common.css">
+	<link rel="stylesheet" type='text/css' href="./css/index.css">
+	<link rel="stylesheet" type='text/css' href="./css/gaesipan.css">
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+
+
+	<link rel="stylesheet" type='text/css' href="./css/weather-icons.min.css">
+	<link rel="stylesheet" type='text/css'
+		href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css">
+	<script src="js/jquery-1.7.1.min.js"></script><!-- 날씨용 -->
+
+
+
+	<script src="js/jquery-1.12.4.min.js"></script> <!-- 팝업 자동차용 -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/prefixfree.min.js"></script> <!-- 팝업 자동차용 -->
+
+	<!-- 
+	<script src=" https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+ 팸리리사이트랑 팝업자동차랑 충돌중...패밀리사이트 없애니까 팝업이 잘돌아감 -->
+	<script src="./js/focusIn2.js"></script><!-- 팸리리사이트 -->
+
+
+	<script src="./js/script.js"></script>
+</head>
+
+<body>
+	<div id="con_floating">
+		<!-- 플로팅메뉴 + 맨위로 -->
+
+
+		<div class="circle3">
+			<div class="open_icon">
+				<a href="#">위로가기</a>
+			</div>
+		</div>
+	</div>
+
+	<div id="wrap">
+		<header id="header">
+			<div id="wrap_wrapbluee" class="blue">
+				<div id="gnb_top">
+					<div id="gnb_top_menu">
+						<ul>
+							<li class="button glow_button"><a href="#none">문화관광</a></li>
+							<li class="button glow_button"> <a href="#none">열린시장실</a></li>
+							<li class="button glow_button"> <a href="#none">보건소</a></li>
+							<li class="button glow_button"> <a href="#none">영주시의회</a></li>
+							<li class="button glow_button"> <a href="#none">사이버시민</a></li>
+							<li class="button glow_button"> <a href="#none">인삼엑스포</a></li>
+							<li class="button glow_button"> <a href="#none">실내수영장</a></li>
+						</ul>
+					</div>
+
+					<div id="gnb_option">
+						<div><a href="#none">로그인</a></div>
+						<div><a href="#none">사이트 바로가기</a></div>
+						<div>
+							<form id="orderForm">
+
+								<select id="familysite1" style="width: 100px;">
+									<option value="Family site">한국어</option>
+									<option value="Family site">ENGLISH</option>
+									<option value="Family site">中文</option>
+									<option value="Family site">日本語</option>
+								</select>
+
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="wrap_wrapwhite" class="white">
+				<div id="gnb_menu">
+					<div id="h_logo"> </div>
+					<div id="gnb_nav">
+						<ul class="navmm-links">
+
+							<li>
+								<a href="#none" class="desktop-item">전자민원</a>
+							</li>
+							<li>
+								<a href="#none" class="desktop-item">영주소개</a>
+							</li>
+							<li>
+								<a href="#none" class="desktop-item">소통참여</a>
+							</li>
+							<li>
+								<a href="#none" class="desktop-item">산업경제</a>
+							</li>
+							<li>
+								<a href="#none" class="desktop-item">정보공개</a>
+							</li>
+							<li>
+								<a href="#none" class="desktop-item">분야별정보</a>
+							</li>
+							<li>
+								<a href="#none" class="desktop-item">인구정책</a>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+				<div>
+					<div id="subshadow_box">
+						<div class="nav_back">
+
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+			<div id="wrap_wrap" class="white">
+				<div id="header_search">
+					<div id="h_search">
+						<form id="search_orderForm">
+							<span class="cellStyle">
+								<select id="familysite0"
+									style="width:140px;height:40px; background-color: white; position: relative; left: 30px; border: none; color: black;">
+									<option value="Family site">통합검색</option>
+									<option value="Family site">담당업무</option>
+									<option value="Family site">직원검색</option>
+
+								</select>
+							</span>
+							<div class="container-1">
+								<div class="icon"></div>
+								<input type="text" id="search" autocomplete="off" placeholder="Search..." />
+							</div>
+						</form>
+
+					</div>
+
+				</div>
+			</div>
+		</header><!-- 헤더 끝 -->
+		<!-- 헤더 끝 -->
+
+
+		<section id="section">
+			<div id="personal">
+				<div id="personal_bottom">
+					<div id="personal_menu">
+						<div id="personal_menutop">
+							회원관련
+						</div>
+						<ul id="navi">
+							<li class="group on">
+								<div class="title">회원서비스</div>
+								<ul class="sub">
+									<li><a href="#none">로그인</a></li>
+									<li><a href="#none">회원가입</a></li>
+									<li><a href="#none">아이디/비밀번호찾기</a></li>
+									<li><a href="#none">회원정보 수정</a></li>
+									<li><a href="#none">회원탈퇴</a></li>
+
+								</ul>
+							</li>
+
+						</ul>
+
+
+
+					</div>
+					<div id="personal_cash">
+						<div id="cash_top">
+							<div id="cash_location">
+								<ul>
+									<li>홈</li>
+
+									<li>회원관련</li>
+
+									<li>회원서비스</li>
+									<li>로그인</li>
+								</ul>
+							</div>
+							<span class="cash_title">로그인</span>
+						</div>
+						<div id="cash_bot">
+							<div id="tab">
+								<div class="container_tab"></div>
+								<div class="container">
+									<div class="register-form">
+										<figure class="register-logo">
+											<img src="https://raw.githubusercontent.com/alaattinerby/Kodluyoruz-Work01-Register-Form/main/Work01/img/logo.png"
+												alt="Logo">
+										</figure>
+										<h1>로그인</h1>
+										<div class="social-media">
+											<a href="https://www.facebook.com" target="_blank">
+												<div class="social-bg add">
+													<img src="https://raw.githubusercontent.com/alaattinerby/Kodluyoruz-Work01-Register-Form/main/Work01/img/facebook-logo.png"
+														alt="Facebook">
+												</div>
+											</a>
+											<a href="https://www.gmail.com/" target="_blank">
+												<div class="social-bg add">
+													<img src="https://raw.githubusercontent.com/alaattinerby/Kodluyoruz-Work01-Register-Form/main/Work01/img/gmail-logo.png"
+														alt="Gmail">
+												</div>
+											</a>
+											<a href="https://www.naver.com/" target="_blank">
+												<div class="social-bg">
+													<img src="./images/naver.png" width="20" height="20" alt="naver">
+												</div>
+											</a>
+										</div>
+										<p class="addressP">영주시청 사이트에 오신 것을 환영합니다</p>
+										<form>
+											<input type="email" placeholder="Email">
+											<input type="password" placeholder="Password">
+											<button type="submit">로그인</button>
+										</form>
+										<p class="loginP">계정이 없으신가요? <span>회원가입</span></p>
+									</div>
+								</div>
+
+							</div>
+
+
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+		</section><!-- 섹션 끝 -->	<div>
+		 
+		</div>
+		<!-- 섹션 끝 -->
+
+
+		<footer id="footer">
+			<div id="wrap_wrapgray" class="gray">
+				<div id="familysite">
+					<nav class="navf">
+						<ul class="nav-wrap cf">
+							<li>
+								<a href="#none" class="navBt">행정복지센터</a>
+								<ul class="sub">
+									<li><a href="#none">풍기읍</a></li>
+									<li><a href="#none">이산면</a></li>
+									<li><a href="#none">평은면</a></li>
+									<li><a href="#none">문수면</a></li>
+									<li><a href="#none">장수면</a></li>
+									<li><a href="#none">안정면</a></li>
+									<li><a href="#none">봉현면</a></li>
+									<li><a href="#none">순흥면</a></li>
+									<li><a href="#none">단산면</a></li>
+									<li><a href="#none">상망동</a></li>
+									<li><a href="#none">하망동</a></li>
+									<li><a href="#none">영주1동</a></li>
+									<li><a href="#none">영주2동</a></li>
+								</ul>
+							</li>
+							<li><a href="#none" class="navBt">유관기관</a>
+								<ul class="sub">
+									<li><a href="#none">영주경찰서</a></li>
+									<li><a href="#none">영주소방서</a></li>
+									<li><a href="#none">영주교육지원청</a></li>
+									<li><a href="#none">영주문화원</a></li>
+									<li><a href="#none">영주고용노동지청</a></li>
+									<li><a href="#none">경북북부보훈지청</a></li>
+									<li><a href="#none">영주세무서</a></li>
+									<li><a href="#none">한국전기안전공사</a></li>
+									<li><a href="#none">동양대학교</a></li>
+									<li><a href="#none">영주시취업지원센터</a></li>
+								</ul>
+							</li>
+							<li><a href="#none" class="navBt">시군청홈페이지</a>
+								<ul class="sub">
+									<li><a href="#none">경북도청</a></li>
+									<li><a href="#none">포항시</a></li>
+									<li><a href="#none">경주시</a></li>
+									<li><a href="#none">김천시</a></li>
+									<li><a href="#none">안동시</a></li>
+									<li><a href="#none">구미시</a></li>
+									<li><a href="#none">영천시</a></li>
+									<li><a href="#none">상주시</a></li>
+									<li><a href="#none">문경시</a></li>
+									<li><a href="#none">경산시</a></li>
+									<li><a href="#none">군위군</a></li>
+									<li><a href="#none">의성군</a></li>
+									<li><a href="#none">청송군</a></li>
+									<li><a href="#none">영양군</a></li>
+									<li><a href="#none">영덕군</a></li>
+									<li><a href="#none">청도군</a></li>
+									<li><a href="#none">고령군</a></li>
+									<li><a href="#none">성주군</a></li>
+									<li><a href="#none">칠곡군</a></li>
+									<li><a href="#none">예천군</a></li>
+									<li><a href="#none">울진군</a></li>
+								</ul>
+							</li>
+							<li><a href="#none" class="navBt">패밀리사이트</a>
+								<ul class="sub">
+									<li><a href="#none">시의회</a></li>
+									<li><a href="#none">영주시립도서관</a></li>
+									<li><a href="#none">영주시인재육성장학회</a></li>
+									<li><a href="#none">영주시사이버시민</a></li>
+									<li><a href="#none">평생학습센터</a></li>
+									<li><a href="#none">영주장날</a></li>
+									<li><a href="#none">콩세계과학관</a></li>
+									<li><a href="#none">영주문화예술회관</a></li>
+									<li><a href="#none">영주시민회관</a></li>
+									<li><a href="#none">공공체육시설</a></li>
+									<li><a href="#none">영주문화관광재단</a></li>
+									<li><a href="#none">인삼박물관</a></li>
+									<li><a href="#none">보건소</a></li>
+									<li><a href="#none">수도사업소</a></li>
+									<li><a href="#none">소수서원관리사무소</a></li>
+									<li><a href="#none">농업기술센터</a></li>
+									<li><a href="#none">환경사업소</a></li>
+									<li><a href="#none">사이버홍보관</a></li>
+									<li><a href="#none">148아트스퀘어</a></li>
+									<li><a href="#none">천지인 전통사상체험관</a></li>
+									<li><a href="#none">영주실내수영장</a></li>
+								</ul>
+							</li>
+
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div id="wrap_wrapblue" class="blue">
+				<div id="footer_2">
+					<div id="f_left">
+						<div id="f_top">
+							<div id="f_top_right">
+
+								<ul>
+									<li>영주민원콜센터 &nbsp; &#58; &nbsp; </li>
+									<li>054-639-7777</li>
+
+
+								</ul>
+
+							</div>
+							<div id="f_top_left">
+								<ul>
+									<li>영주시(당직실) &nbsp; &#58; &nbsp; </li>
+									<li> 054-639-6222</li>
+
+								</ul>
+							</div>
+						</div>
+
+						<div id="f_bottom">
+							<ul>
+								<li><a href="#none">개인정보처리방침 </a></li>
+								<li><a href="#none">저작권정책 </a></li>
+								<li><a href="#none">이메일무단수집거부 </a></li>
+								<li><a href="#none">홈페이지 개선제안 </a></li>
+								<li><a href="#none">이용안내 </a></li>
+								<li><a href="#none">내PC지킴이 </a></li>
+								<li><a href="#none">찾아오시는 길 </a></li>
+								<li><a href="#none">사이트맵 </a></li>
+
+							</ul>
+
+						</div>
+
+					</div>
+					<div id="f_right">
+
+						<div id="f_logo">
+
+						</div>
+
+						<div id="f_social">
+							<ul>
+								<li><img src="./images/social/facebook_icon.png" alt=""><a href="#none"></a></li>
+								<li><img src="./images/social/instagram_icon.png" alt=""><a href="#none"></a></li>
+								<li><img src="./images/social/youtube_icon.png" alt=""><a href="#none"></a></li>
+								<li><img src="./images/social/naverblog_icon.png" alt=""><a href="#none"></a></li>
+							</ul>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer><!-- 푸터 끝 -->
+
+
+
+
+
+	</div><!-- 전체 랩 -->
+
+
+</body>
+
+</html>

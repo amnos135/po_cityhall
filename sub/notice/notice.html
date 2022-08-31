@@ -1,0 +1,795 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>영주시청</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+	
+	<link rel="stylesheet" type='text/css' href="./css/common.css">
+	<link rel="stylesheet" type='text/css' href="./css/index.css">
+	<link rel="stylesheet" type='text/css' href="./css/gaesipan.css">
+	<link rel="stylesheet" type='text/css' href="./css/weather-icons.min.css">
+	<link rel="stylesheet" type='text/css' href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css">
+ 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script> <!-- 팝업 자동차용 -->
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/prefixfree.min.js"></script> <!-- 팝업 자동차용 -->
+
+	<!-- 
+	<script src=" https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+ 팸리리사이트랑 팝업자동차랑 충돌중...패밀리사이트 없애니까 팝업이 잘돌아감 -->
+	<script src="./js/focusIn2.js"></script><!-- 팸리리사이트 -->
+
+
+	<script src="./js/script.js"></script>
+
+
+</head>
+	
+
+<body>
+	<div id="con_floating">
+		<!-- 플로팅메뉴 + 맨위로 -->
+
+
+		<div class="circle3">
+			<div class="open_icon">
+				<a href="#">위로가기</a>
+			</div>
+		</div>
+	</div>
+
+	<div id="wrap">
+		<header id="header">
+			<div id="wrap_wrap" class="blue">
+				<div id="gnb_top">
+					<div id="gnb_top_menu">
+						<ul>
+							<li class="button glow_button"><a href="#none">문화관광</a></li>
+							<li class="button glow_button"> <a href="#none">열린시장실</a></li>
+							<li class="button glow_button"> <a href="#none">보건소</a></li>
+							<li class="button glow_button"> <a href="#none">영주시의회</a></li>
+							<li class="button glow_button"> <a href="#none">사이버시민</a></li>
+							<li class="button glow_button"> <a href="#none">인삼엑스포</a></li>
+							<li class="button glow_button"> <a href="#none">실내수영장</a></li>
+						</ul>
+					</div>
+
+					<div id="gnb_option">
+						<div><a href="#none">로그인</a></div>
+						<div><a href="#none">사이트 바로가기</a></div>
+						<div>
+							<form id="orderForm" style="color: black;">
+
+								<select id="familysite1" style="width: 100px;">
+									<option value="Family site">한국어</option>
+									<option value="Family site">ENGLISH</option>
+									<option value="Family site">中文</option>
+									<option value="Family site">日本語</option>
+								</select>
+
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="wrap_wrap" class="white">
+				<div id="gnb_menu">
+					<div id="h_logo"> </div>
+					<div id="gnb_nav ">
+						<ul class="navmm-links">
+							<label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+							<li>
+								<a href="#none" class="desktop-item">전자민원</a>
+							</li>
+							<li>
+								<a href="#none" class="desktop-item">영주소개</a>
+							</li>
+							<li>
+								<a href="#none" class="desktop-item">소통참여</a>
+							</li>
+							<li>
+								<a href="#none" class="desktop-item">산업경제</a>
+							</li>
+							<li>
+								<a href="#none" class="desktop-item">정보공개</a>
+							</li>
+							<li>
+								<a href="#none" class="desktop-item">분야별정보</a>
+							</li>
+							<li>
+								<a href="#none" class="desktop-item">인구정책</a>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+				<div id="nav  ">
+					<div id="subshadow_box">
+						<div class="nav_back">
+
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+			<div id="wrap_wrap" class="white">
+				<div id="header_search">
+					<div id="h_search">
+						<form id="search_orderForm">
+							<span class="cellStyle">
+								<select id="familysite1"
+									style="width:140px;height:40px; background-color: white; position: relative; left: 30px; border: none; color: black;">
+									<option value="Family site">통합검색</option>
+									<option value="Family site">담당업무</option>
+									<option value="Family site">직원검색</option>
+
+								</select>
+							</span>
+							<div class="container-1">
+								<div class="icon"></div>
+								<input type="text" id="search" autocomplete="off" placeholder="Search..." />
+							</div>
+						</form>
+
+					</div>
+
+				</div>
+			</div>
+		</header><!-- 헤더 끝 -->
+		<!-- 헤더 끝 -->
+
+
+		<section id="section">
+			<div id="personal">
+				<div id="personal_bottom">
+					<div id="personal_menu">
+						<div id="personal_menutop">
+							정보공개
+						</div>
+						<ul id="navi">
+							<li class="group">
+								<div class="title">행정정보공개</div>
+								<ul class="sub" style="display: block;">
+									<li><a href="#none">사전정보공표</a></li>
+									<li><a href="#none">제도안내</a></li>
+									<li><a href="#none">관련법령</a></li>
+									<li><a href="#none">정보공개청구</a></li>
+									<li><a href="#none">비공개 대상정보</a></li>
+									<li><a href="#none">정보공개목록</a></li>
+									<li><a href="#none">인사통계</a></li>
+
+								</ul>
+							</li>
+							<li class="group">
+								<div class="title">공공데이터개방</div>
+								<ul class="sub">
+									<li><a href="#none">공공정보 개방정책</a></li>
+									<li><a href="#none">법제도</a></li>
+									<li><a href="#none">공공정보 목록</a></li>
+									<li><a href="#none">공공데이터 포탈</a></li>
+									<li><a href="#none">공공와이파이</a></li>
+								</ul>
+							</li>
+							<li class="group">
+								<div class="title">정책실명제</div>
+								<ul class="sub">
+									<li><a href="#none">정책실명제 안내</a></li>
+									<li><a href="#none">이전 공개과제</a></li>
+									<li><a href="#none">국민신청실명제</a></li>
+
+								</ul>
+							</li>
+							<li class="group on">
+								<div class="title">알림마당</div>
+								<ul class="sub">
+									<li><a href="#none">공지사항</a></li>
+									<li><a href="#none">입법예고</a></li>
+									<li><a href="#none">채용공고</a></li>
+									<li><a href="#none">보도자료 및 해명</a></li>
+									<li><a href="#none">주요일정</a></li>
+									<li><a href="#none">영주인터넷신문</a></li>
+									<li><a href="#none">민방위안내</a></li>
+									<li><a href="#none">지방보조금</a></li>
+									<li><a href="#none">환경소식</a></li>
+									<li><a href="#none">업무추진비</a></li>
+								</ul>
+							</li>
+							<li class="group">
+								<div class="title">행정자료실</div>
+								<ul class="sub">
+									<li><a href="#none">영주시보</a></li>
+									<li><a href="#none">통계</a></li>
+									<li><a href="#none">시정백서</a></li>
+									<li><a href="#none">자치법규</a></li>
+									<li><a href="#none">도시기본계획</a></li>
+								</ul>
+							</li>
+							<li class="group">
+								<div class="title">지방공기업</div>
+								<ul class="sub">
+									<li><a href="#none">지방공기업이란?</a></li>
+									<li><a href="#none">지방공기업 현황</a></li>
+									<li><a href="#none">지방공기업 경영정보</a></li>
+								</ul>
+							</li>
+							<li class="group">
+								<div class="title">행정서비스헌장</div>
+								<ul class="sub">
+									<li><a href="#none">헌장전문</a></li>
+									<li><a href="#none">보상조치</a></li>
+									<li><a href="#none">시민협조사항</a></li>
+								</ul>
+							</li>
+							<li class="group">
+								<div class="title">행정절차제도</div>
+								<ul class="sub">
+									<li><a href="#none">행정절차제도안내</a></li>
+									<li><a href="#none">행정처분기준</a></li>
+								</ul>
+							</li>
+
+						</ul>
+
+
+
+					</div>
+					<div id="personal_cash">
+						<div id="cash_top">
+							<div id="cash_location">
+								<ul>
+									<li>홈</li>
+
+									<li>정보공개</li>
+
+									<li>알림마당</li>
+									<li>공지사항</li>
+								</ul>
+
+ 
+
+							</div>
+
+							<span class="cash_title">공지사항</span>
+						</div>
+						<div id="cash_bot">
+							<div id="content">
+
+
+
+								<!-- 4 Depth Menu -->
+
+
+
+								<form id="list">
+
+
+
+									<div class="bod_head">
+										<p class="page_num">
+											현재 페이지  <span style="color: blue;">1</span> / 전체 페이지 1032
+										</p>
+										<fieldset class="bod_search">
+											<legend class="hidden">게시판 검색</legend>
+											<label for="searchDept" class="hidden">부서 선택 항목</label>
+											<select id="searchDept">
+												<option value="" selected="selected">전체 부서</option>
+												<option value="56703750000">성산구 | 민원지적과</option>
+												<option value="56703750000">성산구 | 민원지적과</option>
+											</select>
+
+
+											<label for="searchType" class="hidden">검색구분 선택 : </label>
+											<select id="searchType" title="검색유형 선택">
+												<option value="b_title">제목</option>
+												<option value="b_write">작성자</option>
+												<option value="b_content">내용</option>
+											</select>
+											<label for="searchTxt" class="hidden">검색어 입력: </label>
+											<input id="searchTxt" title="검색어 입력" type="text" value="">
+
+											<input type="submit" value="검색" title="검색" onclick="$('#page').val(1);"
+												class="btn small">
+										</fieldset>
+									</div>
+
+
+
+									<table class="bod_list">
+										<caption class="hidden">
+											새소식 목록 번호,
+
+											제목, 파일,
+
+											작성자, 작성일, 조회 항목별 순서대로 안내하는 표입니다.
+										</caption>
+										<thead>
+											<tr>
+
+												<th scope="col" class="list_num">번호</th>
+
+												<th scope="col" class="list_tit">제목</th>
+
+												<th scope="col" class="list_file">파일</th>
+
+
+
+												<th scope="col" class="list_write">작성자</th>
+												<th scope="col" class="list_date">작성일</th>
+
+												<th scope="col" class="list_hit">조회</th>
+
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="list_num">
+													10315
+												</td>
+												<td class="list_tit">
+													<a href="#none"
+														onclick="goTo.view('list','721281','100','0201010000'); return false;"
+														data-action="/portal/bbs/view.do?bIdx=721281&amp;ptIdx=100">
+														2022 경상북도 양성평등 콘텐츠 공모전 개최 안내
+													</a>
+												</td>
+												<td class="list_file">
+													<img src="./images/file.png" alt="첨부파일 이미지">
+												</td>
+
+												<td class="list_write">
+													여성가족과
+												</td>
+												<td class="list_date">2022-05-28</td>
+												<td class="list_hit">126</td>
+										</tbody>
+										<tbody>
+											<tr>
+												<td class="list_num">
+													10314
+												</td>
+												<td class="list_tit">
+													<a href="#none"
+														onclick="goTo.view('list','721281','100','0201010000'); return false;"
+														data-action="/portal/bbs/view.do?bIdx=721281&amp;ptIdx=100">
+														2022년 경상남도 양성평등 콘텐츠 공모전 안내
+													</a>
+												</td>
+												<td class="list_file">
+													<img src="./images/file.png" alt="첨부파일 이미지">
+												</td>
+
+												<td class="list_write">
+													여성가족과
+												</td>
+												<td class="list_date">2022-05-28</td>
+												<td class="list_hit">87</td>
+										</tbody>
+										<tbody>
+											<tr>
+												<td class="list_num">
+													10313
+												</td>
+												<td class="list_tit">
+													<a href="#none"
+														onclick="goTo.view('list','721281','100','0201010000'); return false;"
+														data-action="/portal/bbs/view.do?bIdx=721281&amp;ptIdx=100">
+														2022년도 제1회 경상북도 지방공무원 경력경쟁 및 공개경쟁임용시험 영주시 최종합격자 임용후보자 등록 안내
+													</a>
+												</td>
+												<td class="list_file">
+													<img src="./images/file.png" alt="첨부파일 이미지">
+												</td>
+
+												<td class="list_write">
+													여성가족과
+												</td>
+												<td class="list_date">2022-05-28</td>
+												<td class="list_hit">47</td>
+										</tbody>
+										<tbody>
+											<tr>
+												<td class="list_num">
+													10312
+												</td>
+												<td class="list_tit">
+													<a href="#none"
+														onclick="goTo.view('list','721281','100','0201010000'); return false;"
+														data-action="/portal/bbs/view.do?bIdx=721281&amp;ptIdx=100">
+														022영주세계풍기인삼엑스포 판매시설(농.특산품) 운영
+													</a>
+												</td>
+												<td class="list_file">
+													<img src="./images/file.png" alt="첨부파일 이미지">
+												</td>
+
+												<td class="list_write">
+													여성가족과
+												</td>
+												<td class="list_date">2022-05-28</td>
+												<td class="list_hit">66</td>
+										</tbody>
+										<tbody>
+											<tr>
+												<td class="list_num">
+													10311
+												</td>
+												<td class="list_tit">
+													<a href="#none"
+														onclick="goTo.view('list','721281','100','0201010000'); return false;"
+														data-action="/portal/bbs/view.do?bIdx=721281&amp;ptIdx=100">
+														「2022년 농식품산업 경영컨설팅 지원사업」계획 알림
+													</a>
+												</td>
+												<td class="list_file">
+													<img src="./images/file.png" alt="첨부파일 이미지">
+												</td>
+
+												<td class="list_write">
+													여성가족과
+												</td>
+												<td class="list_date">2022-05-28</td>
+												<td class="list_hit">72</td>
+										</tbody>
+										<tbody>
+											<tr>
+												<td class="list_num">
+													10310
+												</td>
+												<td class="list_tit">
+													<a href="#none"
+														onclick="goTo.view('list','721281','100','0201010000'); return false;"
+														data-action="/portal/bbs/view.do?bIdx=721281&amp;ptIdx=100">
+														2022년 경상남도 양성평등 콘텐츠 공모전 안내
+													</a>
+												</td>
+												<td class="list_file">
+													<img src="./images/file.png" alt="첨부파일 이미지">
+												</td>
+
+												<td class="list_write">
+													여성가족과
+												</td>
+												<td class="list_date">2022-05-28</td>
+												<td class="list_hit">67</td>
+										</tbody>
+										<tbody>
+											<tr>
+												<td class="list_num">
+													10309
+												</td>
+												<td class="list_tit">
+													<a href="#none"
+														onclick="goTo.view('list','721281','100','0201010000'); return false;"
+														data-action="/portal/bbs/view.do?bIdx=721281&amp;ptIdx=100">
+														2022년 청년마음건강지원사업 신청자 모집
+													</a>
+												</td>
+												<td class="list_file">
+													<img src="./images/file.png" alt="첨부파일 이미지">
+												</td>
+
+												<td class="list_write">
+													2022년 사회적경제 창업사관학교 참여자 추가모집
+
+												</td>
+												<td class="list_date">2022-05-28</td>
+												<td class="list_hit">58</td>
+										</tbody>
+										<tbody>
+											<tr>
+												<td class="list_num">
+													10308
+												</td>
+												<td class="list_tit">
+													<a href="#none"
+														onclick="goTo.view('list','721281','100','0201010000'); return false;"
+														data-action="/portal/bbs/view.do?bIdx=721281&amp;ptIdx=100">
+														2022년 경상남도 양성평등 콘텐츠 공모전 안내
+													</a>
+												</td>
+												<td class="list_file">
+													<img src="./images/file.png" alt="첨부파일 이미지">
+												</td>
+
+												<td class="list_write">
+													여성가족과
+												</td>
+												<td class="list_date">2022-05-28</td>
+												<td class="list_hit">187</td>
+										</tbody>
+										<tbody>
+											<tr>
+												<td class="list_num">
+													10307
+												</td>
+												<td class="list_tit">
+													<a href="#none"
+														onclick="goTo.view('list','721281','100','0201010000'); return false;"
+														data-action="/portal/bbs/view.do?bIdx=721281&amp;ptIdx=100">
+														2022년 경상남도 양성평등 콘텐츠 공모전 안내
+													</a>
+												</td>
+												<td class="list_file">
+													<img src="./images/file.png" alt="첨부파일 이미지">
+												</td>
+
+												<td class="list_write">
+													『중소기업 근로자 기숙사 임차비 지원사업』 지원업체 모집 재공고(지원대상 변경)
+
+												</td>
+												<td class="list_date">2022-05-28</td>
+												<td class="list_hit">77</td>
+										</tbody>
+										<tbody>
+											<tr>
+												<td class="list_num">
+													10306
+												</td>
+												<td class="list_tit">
+													<a href="#none"
+														onclick="goTo.view('list','721281','100','0201010000'); return false;"
+														data-action="/portal/bbs/view.do?bIdx=721281&amp;ptIdx=100">
+														2022년 선도농업인 활용 멘토링 교육사업 멘티(교육생) 모집 안내
+
+													</a>
+												</td>
+												<td class="list_file">
+													<img src="./images/file.png" alt="첨부파일 이미지">
+												</td>
+
+												<td class="list_write">
+													전국동시 지방선거 격리자등 외출 사유 공고문
+
+												</td>
+												<td class="list_date">2022-05-28</td>
+												<td class="list_hit">91</td>
+										</tbody>
+									</table>
+
+
+									<div class="bod_page">
+										<a href="#none" onclick="goPage(1); return false;" class="btn_frist">처음 페이지</a><a
+											href="#none" onclick="goPage(1); return false;" class="btn_10prev"
+											title="이전 10페이지">이전
+											10페이지</a><span>1</span><a href="#none" onclick="goPage(2); return false;"
+											title="2페이지로 이동">2</a><a href="#none" onclick="goPage(3); return false;"
+											title="3페이지로 이동">3</a><a href="#none" onclick="goPage(4); return false;"
+											title="4페이지로 이동">4</a><a href="#none" onclick="goPage(5); return false;"
+											title="5페이지로 이동">5</a><a href="#none" onclick="goPage(6); return false;"
+											title="6페이지로 이동">6</a><a href="#none" onclick="goPage(7); return false;"
+											title="7페이지로 이동">7</a><a href="#none" onclick="goPage(8); return false;"
+											title="8페이지로 이동">8</a><a href="#none" onclick="goPage(9); return false;"
+											title="9페이지로 이동">9</a><a href="#none" onclick="goPage(10); return false;"
+											title="10페이지로 이동">10</a><a href="#none" onclick="goPage(11); return false; "
+											class="btn_10next" title="다음 10페이지">다음 10페이지</a><a href="#none"
+											onclick="goPage(1032); return false; " class="btn_end" title="끝 페이지">끝
+											페이지</a>&nbsp;
+
+									</div>
+
+								</form>
+
+								<script type="text/javascript">
+									yh.siteCodeFull = "portal";
+									yh.ptIdx = "100";
+									yh.bIdx = "";
+									yh.isNew = eval("true");
+									yh.formId = "list";
+									yh.formName = "litForm";
+								</script>
+								<script type="text/javascript" src="/common/js/commonProcess.js"></script>
+								<script type="text/javascript" src="/common/js/bbs/pageMove.js"></script>
+
+							</div>
+
+
+
+							<script type="text/javascript">
+								//<![CDATA[
+
+								$(document).ready(function () {
+									$("#regBtn").click(function () {
+										if ($("[name=researchPoint]:checked").length == 0) {
+											alert("평가 점수를 선택해주세요.");
+											$("#researchPoint5").focus();
+											return false;
+										}
+
+										$.ajax({
+											type: "post",
+											dataType: "json",
+											url: document.researchForm.action,
+											data: $("#researchForm").serialize(),
+											success: function (result) {
+												alert(result.message);
+											}
+										}).fail(function () {
+											alert("서버와 통신 중 오류가 발생했습니다.");
+										});
+									});
+								});
+
+								//]]>
+							</script>
+
+
+
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</section><!-- 섹션 끝 -->
+		<!-- 섹션 끝 -->
+
+
+		<footer id="footer">
+			<div id="wrap_wrap" class="gray">
+				<div id="familysite">
+					<nav class="navf">
+						<ul class="nav-wrap cf">
+							<li>
+								<a href="#none" class="navBt">행정복지센터</a>
+								<ul class="sub">
+									<li><a href="#none">풍기읍</a></li>
+									<li><a href="#none">이산면</a></li>
+									<li><a href="#none">평은면</a></li>
+									<li><a href="#none">문수면</a></li>
+									<li><a href="#none">장수면</a></li>
+									<li><a href="#none">안정면</a></li>
+									<li><a href="#none">봉현면</a></li>
+									<li><a href="#none">순흥면</a></li>
+									<li><a href="#none">단산면</a></li>
+									<li><a href="#none">상망동</a></li>
+									<li><a href="#none">하망동</a></li>
+									<li><a href="#none">영주1동</a></li>
+									<li><a href="#none">영주2동</a></li>
+								</ul>
+							</li>
+							<li><a href="#none" class="navBt">유관기관</a>
+								<ul class="sub">
+									<li><a href="#none">영주경찰서</a></li>
+									<li><a href="#none">영주소방서</a></li>
+									<li><a href="#none">영주교육지원청</a></li>
+									<li><a href="#none">영주문화원</a></li>
+									<li><a href="#none">영주고용노동지청</a></li>
+									<li><a href="#none">경북북부보훈지청</a></li>
+									<li><a href="#none">영주세무서</a></li>
+									<li><a href="#none">한국전기안전공사</a></li>
+									<li><a href="#none">동양대학교</a></li>
+									<li><a href="#none">영주시취업지원센터</a></li>
+								</ul>
+							</li>
+							<li><a href="#none" class="navBt">시군청홈페이지</a>
+								<ul class="sub">
+									<li><a href="#none">경북도청</a></li>
+									<li><a href="#none">포항시</a></li>
+									<li><a href="#none">경주시</a></li>
+									<li><a href="#none">김천시</a></li>
+									<li><a href="#none">안동시</a></li>
+									<li><a href="#none">구미시</a></li>
+									<li><a href="#none">영천시</a></li>
+									<li><a href="#none">상주시</a></li>
+									<li><a href="#none">문경시</a></li>
+									<li><a href="#none">경산시</a></li>
+									<li><a href="#none">군위군</a></li>
+									<li><a href="#none">의성군</a></li>
+									<li><a href="#none">청송군</a></li>
+									<li><a href="#none">영양군</a></li>
+									<li><a href="#none">영덕군</a></li>
+									<li><a href="#none">청도군</a></li>
+									<li><a href="#none">고령군</a></li>
+									<li><a href="#none">성주군</a></li>
+									<li><a href="#none">칠곡군</a></li>
+									<li><a href="#none">예천군</a></li>
+									<li><a href="#none">울진군</a></li>
+								</ul>
+							</li>
+							<li><a href="#none" class="navBt">패밀리사이트</a>
+								<ul class="sub">
+									<li><a href="#none">시의회</a></li>
+									<li><a href="#none">영주시립도서관</a></li>
+									<li><a href="#none">영주시인재육성장학회</a></li>
+									<li><a href="#none">영주시사이버시민</a></li>
+									<li><a href="#none">평생학습센터</a></li>
+									<li><a href="#none">영주장날</a></li>
+									<li><a href="#none">콩세계과학관</a></li>
+									<li><a href="#none">영주문화예술회관</a></li>
+									<li><a href="#none">영주시민회관</a></li>
+									<li><a href="#none">공공체육시설</a></li>
+									<li><a href="#none">영주문화관광재단</a></li>
+									<li><a href="#none">인삼박물관</a></li>
+									<li><a href="#none">보건소</a></li>
+									<li><a href="#none">수도사업소</a></li>
+									<li><a href="#none">소수서원관리사무소</a></li>
+									<li><a href="#none">농업기술센터</a></li>
+									<li><a href="#none">환경사업소</a></li>
+									<li><a href="#none">사이버홍보관</a></li>
+									<li><a href="#none">148아트스퀘어</a></li>
+									<li><a href="#none">천지인 전통사상체험관</a></li>
+									<li><a href="#none">영주실내수영장</a></li>
+								</ul>
+							</li>
+
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div id="wrap_wrap" class="blue">
+				<div id="footer_2">
+					<div id="f_left">
+						<div id="f_top">
+							<div id="f_top_right">
+
+								<ul>
+									<li>영주민원콜센터 &nbsp; &#58; &nbsp; </li>
+									<li>054-639-7777</li>
+
+
+								</ul>
+
+							</div>
+							<div id="f_top_left">
+								<ul>
+									<li>영주시(당직실) &nbsp; &#58; &nbsp; </li>
+									<li> 054-639-6222</li>
+
+								</ul>
+							</div>
+						</div>
+
+						<div id="f_bottom">
+							<ul>
+								<li><a href="#none">개인정보처리방침 </a></li>
+								<li><a href="#none">저작권정책 </a></li>
+								<li><a href="#none">이메일무단수집거부 </a></li>
+								<li><a href="#none">홈페이지 개선제안 </a></li>
+								<li><a href="#none">이용안내 </a></li>
+								<li><a href="#none">내PC지킴이 </a></li>
+								<li><a href="#none">찾아오시는 길 </a></li>
+								<li><a href="#none">사이트맵 </a></li>
+
+							</ul>
+
+						</div>
+
+					</div>
+					<div id="f_right">
+
+						<div id="f_logo">
+
+						</div>
+
+						<div id="f_social">
+							<ul>
+								<li><img src="./images/social/facebook_icon.png" alt=""><a href="#none"></a></li>
+								<li><img src="./images/social/instagram_icon.png" alt=""><a href="#none"></a></li>
+								<li><img src="./images/social/youtube_icon.png" alt=""><a href="#none"></a></li>
+								<li><img src="./images/social/naverblog_icon.png" alt=""><a href="#none"></a></li>
+							</ul>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer><!-- 푸터 끝 -->
+
+
+
+
+
+	</div><!-- 전체 랩 -->
+
+
+</body>
+
+</html>

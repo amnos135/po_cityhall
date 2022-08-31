@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: -1px;
+    line-height: normal;
+    font-stretch: normal;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    color: gray;
+    text-decoration: none;
+}
+
+.cf {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.cb {
+    clear: both;
+}

@@ -1,0 +1,1674 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>영주시청</title>
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./css/tabstyle.css">
+	<link rel="stylesheet" href="./css/flier.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+
+	<link rel="stylesheet" href="./css/weather-icons.min.css"><!-- 날씨용 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css">
+	<script src="js/jquery-1.7.1.min.js"></script><!-- 날씨용 -->
+
+
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script> <!-- inn_bot용 -->
+
+
+ 
+	<script src="js/jquery-1.12.4.min.js"></script> <!-- 팝업 자동차용 -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/prefixfree.min.js"></script> <!-- 팝업 자동차용 -->
+
+
+
+	<script src="./js/jquery-2.2.4.min.js"></script><!-- 헤더부근 슬라이드배너용 -->
+	<script src="./js/slide_banner2.js"></script><!-- 헤더부근 슬라이드배너용 -->
+
+	<!-- 
+	<script src=" https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+ 팸리리사이트랑 팝업자동차랑 충돌중...패밀리사이트 없애니까 팝업이 잘돌아감 -->
+	<script src="./js/focusIn2.js"></script><!-- 팸리리사이트 -->
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> <!-- 흠 -->
+	 <script src="./js/flier.js"></script>
+	 
+	<script src="./js/script.js"></script>
+
+
+</head>
+
+<body>
+	<div id="popWrap">
+		<div id="popup">
+			<ul>
+				<li>
+
+				</li>
+				<li>
+					<form action="#" name="notice_form">
+						<p>
+							<input type="checkbox" name="chkbox" value="checkbox"> 오늘 하루 창을 열지 않음 <br>
+							<a href="javascript:closeWin();">[닫기]</a>
+						</p>
+					</form>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script>
+		cookiedata = document.cookie; //브라우저에서도 쿠키에 접근가능하도록
+		if (cookiedata.indexOf("popWrap=done") < 0) {
+			document.all['popWrap'].style.visibility = "visible";
+		} else {
+			document.all['popWrap'].style.visibility = "hidden";
+		}
+	</script>
+
+	<div id="con_floating">
+		<!-- 플로팅메뉴 + 맨위로 -->
+
+
+		<div class="circle3">
+			<div class="open_icon">
+				<a href="#">위로가기</a>
+			</div>
+		</div>
+	</div>
+
+	<div id="wrap">
+		<header id="header">
+			<div id="wrap_blue" class="blue">
+				<div id="gnb_top">
+					<div id="gnb_top_menu">
+						<ul>
+							<li class="button glow_button"><a href="#none">문화관광</a></li>
+							<li class="button glow_button"> <a href="#none">열린시장실</a></li>
+							<li class="button glow_button"> <a href="#none">보건소</a></li>
+							<li class="button glow_button"> <a href="#none">영주시의회</a></li>
+							<li class="button glow_button"> <a href="#none">사이버시민</a></li>
+							<li class="button glow_button"> <a href="#none">인삼엑스포</a></li>
+							<li class="button glow_button"> <a href="#none">실내수영장</a></li>
+						</ul>
+					</div>
+
+					<div id="gnb_option">
+						<div><a href="#none">로그인</a></div>
+						<div><a href="#none">사이트 바로가기</a></div>
+						<div>
+							<form id="orderForm">
+
+								<select id="familysite1" style="width: 100px;">
+									<option value="Family site">한국어</option>
+									<option value="Family site">ENGLISH</option>
+									<option value="Family site">中文</option>
+									<option value="Family site">日本語</option>
+								</select>
+
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="wrap_wrapp" class="white">
+				<div id="gnb_menu">
+					<div id="h_logo"></div>
+					<div id="gnb_nav">
+						<ul class="GNB">
+							<li onClick="location.href='./sub/login/login.html'">
+								<span>전자민원</span>
+								<div class="tab">
+									<div class="tab_wrap">
+										<div class="left side">
+											<div class="menu_subject">
+												전자민원
+											</div>
+											<div class="menu_desc">
+												영주시는 언제 어디서나 시민의 편의를 위해 민원서비스를 제공합니다.
+											</div>
+											<div class="menu_image_wrap">
+												<div class="menu_image"></div>
+											</div>
+										</div>
+										<div class="right side">
+											<div class="right_wrap">
+												<ul class="right_menu">
+													<li>
+														<span>민원안내</span>
+														<ul class="sub_menu">
+															<li>민원실 안내</li>
+															<li>민원 업무</li>
+															<li>편리한 민원 제도</li>
+															<li>무인민원발급</li>
+
+														</ul>
+													</li>
+													<li>
+														<span>민원신청/조회</span>
+														<ul class="sub_menu">
+															<li>전자민원신청</li>
+															<li>민원조회</li>
+															<li>민원처리공개</li>
+															<li>안전신문고</li>
+															<li>110수화/채팅상담</li>
+
+														</ul>
+													</li>
+													<li>
+														<span>민원신고센터</span>
+														<ul class="sub_menu">
+															<li>부정불량식품신고</li>
+															<li>물가과다인상업소신고</li>
+															<li>규제개혁신고</li>
+															<li>규제개혁신문고</li>
+															<li>도로보수신고</li>
+															<li>가로등고장신고</li>
+															<li>부동산불법중개신고</li>
+															<li>갑질피해신고</li>
+															<li>예산낭비신고센터</li>
+
+														</ul>
+													</li>
+													<li>
+														<span>민원사무편람</span>
+
+													</li>
+													<li>
+														<span>지방세안내</span>
+														<ul class="sub_menu">
+															<li>지방세안내</li>
+															<li>지방세 자동계산기</li>
+															<li>납세자 보호관</li>
+															<li>세목별 목록</li>
+															<li>we tax</li>
+															<li>납세편의제도</li>
+															<li>지방세구제제도</li>
+															<li>납세자 권리헌장</li>
+															<li>인터넷 자동차 공매</li>
+															<li>지방세 서식</li>
+															<li>마을세무서</li>
+															<li>세무교실</li>
+
+														</ul>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</li>
+							<li onClick="location.href='./sub/notice/notice.html'">
+								<span>영주소개</span>
+								<div class="tab">
+									<div class="tab_wrap">
+										<div class="left side">
+											<div class="menu_subject">
+												영주소개
+											</div>
+											<div class="menu_desc">
+												영주시는 언제 어디서나 시민의 편의를 위해 민원서비스를 제공합니다.
+											</div>
+											<div class="menu_image_wrap">
+												<div class="menu_image"></div>
+											</div>
+										</div>
+										<div class="right side">
+											<div class="right_wrap">
+												<ul class="right_menu">
+													<li>
+														<span>시청안내</span>
+														<ul class="sub_menu">
+															<li>행정조직도</li>
+															<li>시청사소개</li>
+															<li>행정구역/인구/가구</li>
+															<li>시청목표</li>
+															<li>전화번호 안내</li>
+															<li>찾아오시는 길</li>
+
+														</ul>
+													</li>
+													<li>
+														<span>영주의 상징</span>
+														<ul class="sub_menu">
+															<li>시조/시목/시화</li>
+															<li>영주 CI</li>
+															<li>브랜드 슬로건</li>
+															<li>시민의 노래</li>
+															<li>시민헌장</li>
+															<li>영주시 캐릭터</li>
+														</ul>
+													</li>
+													<li>
+														<span>영주의 역사</span>
+														<ul class="sub_menu">
+															<li>역사 특성</li>
+															<li>선비정신 실천</li>
+															<li>역대 시장 군수</li>
+															<li>영주 지명 유래</li>
+
+														</ul>
+													</li>
+													<li>
+														<span>자매우호교류</span>
+														<ul class="sub_menu">
+															<li>국내 자매 도시</li>
+
+															<li>국제 교류 도시</li>
+															<li>향우회</li>
+
+														</ul>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</li>
+							<li onClick="location.href='./sub/sub1/sub1.html'">
+								<span>소통참여</span>
+								<div class="tab">
+									<div class="tab_wrap">
+										<div class="left side">
+											<div class="menu_subject">
+												소통참여
+											</div>
+											<div class="menu_desc">
+												영주시는 언제 어디서나 시민의 편의를 위해 민원서비스를 제공합니다.
+											</div>
+											<div class="menu_image_wrap">
+												<div class="menu_image"></div>
+											</div>
+										</div>
+										<div class="right side">
+											<div class="right_wrap">
+												<ul class="right_menu">
+													<li>자유게시판</li>
+													<li>칭찬합시다</li>
+													<li>홍보/광고마당</li>
+													<li>시정모니터</li>
+													<li>시민 시정평가단</li>
+													<li>문예기행</li>
+													<li>
+														<span>청렴영주</span>
+														<ul class="sub_menu">
+															<li>청렴나누미</li>
+															<li>자체 감사결과</li>
+															<li>주민 감사 청구</li>
+															<li>민간위탁 실적평가 공개</li>
+															<li>공직자 부조리 신고센터</li>
+															<li>익명 공직자 부조리 제보 센터</li>
+															<li>부패공직자 현황</li>
+
+														</ul>
+													</li>
+													<li>
+														<span>주민참여예산</span>
+														<ul class="sub_menu">
+															<li>주민참여예산제 소개</li>
+															<li>예산참여</li>
+															<li>시민예산 자료실</li>
+
+														</ul>
+													</li>
+													<li>
+														<span>설문조사</span>
+														<ul class="sub_menu">
+															<li>설문조사</li>
+															<li>서명운동</li>
+															<li>국민신고 설문조사</li>
+
+														</ul>
+													</li>
+													<li>영주시가 묻습니다</li>
+													<li>
+														<span>국민행복제안</span>
+														<ul class="sub_menu">
+															<li>일반제안</li>
+															<li>공모제안</li>
+															<li>아동 및 청소년 정책제안</li>
+
+														</ul>
+													</li>
+
+													<li>국민생각함</li>
+													<li>
+														<span>적극행정</span>
+														<ul class="sub_menu">
+															<li>적극행정제도소개</li>
+															<li>적극행정 추진방안</li>
+															<li>적극행정 국민추천</li>
+															<li>법령해석</li>
+															<li>알림/소식</li>
+														</ul>
+													</li>
+													<li>
+														<span>알뜰나눔장터</span>
+														<ul class="sub_menu">
+
+															<li>재활용품 판매장</li>
+															<li>중고매매장터</li>
+														</ul>
+													</li>
+													<li>
+														<span>찾아주세요</span>
+														<ul class="sub_menu">
+															<li>가출/행불자</li>
+															<li>유기동물 </li>
+
+														</ul>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</li>
+							<li onClick="location.href='./sub/sub2/sub2.html'">
+								<span>산업경제</span>
+								<div class="tab">
+									<div class="tab_wrap">
+										<div class="left side">
+											<div class="menu_subject">
+												산업경제
+											</div>
+											<div class="menu_desc">
+												영주시는 언제 어디서나 시민의 편의를 위해 민원서비스를 제공합니다.
+											</div>
+											<div class="menu_image_wrap">
+												<div class="menu_image"></div>
+											</div>
+										</div>
+										<div class="right side">
+											<div class="right_wrap">
+												<ul class="right_menu">
+													<li>
+														<span>지역산업</span>
+														<ul class="sub_menu">
+															<li>산업현황</li>
+															<li>대표기업</li>
+															<li>농공단지</li>
+															<li>공장현황</li>
+
+														</ul>
+													</li>
+													<li>
+														<span>투자유치</span>
+														<ul class="sub_menu">
+															<li>환영합니다</li>
+															<li>투자여건</li>
+															<li>인센티브</li>
+															<li>유치대상 사업</li>
+															<li>기업유치 현황</li>
+
+														</ul>
+													</li>
+													<li>
+														<span>국제통상</span>
+														<ul class="sub_menu">
+															<li>수출지원시책</li>
+															<li>무역동향</li>
+															<li>수출입통계</li>
+
+														</ul>
+													</li>
+													<li>
+														<span>취업정보</span>
+														<ul class="sub_menu">
+															<li>구인구직</li>
+															<li>지역 일자리 산업</li>
+															<li>영주시 취업지원센터</li>
+														</ul>
+													</li>
+													<li>
+														<span>소비자생활</span>
+														<ul class="sub_menu">
+															<li>물가안정 모범업소</li>
+															<li>물가동향</li>
+															<li>전통시장</li>
+															<li>영주사랑상품권</li>
+
+														</ul>
+													</li>
+													<li>
+														<span>농업정보</span>
+														<ul class="sub_menu">
+															<li>농산물 유통센터</li>
+															<li>농업기술센터</li>
+															<li>가축방역</li>
+															<li>귀농귀촌 정보</li>
+															<li>농산물 식별정보</li>
+
+														</ul>
+													</li>
+													<li>
+														<span>지역특산품</span>
+														<ul class="sub_menu">
+															<li>공동브랜드</li>
+															<li>특산품</li>
+															<li>영주장날</li>
+
+														</ul>
+													</li>
+													<li>
+														<span>첨단베어링 국가산업단지 조성</span>
+														<ul class="sub_menu">
+															<li>추진현황</li>
+															<li>홍보영상</li>
+
+														</ul>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</li>
+							<li>
+								<span>정보공개</span>
+								<div class="tab">
+									<div class="tab_wrap">
+										<div class="left side">
+											<div class="menu_subject">
+												정보공개
+											</div>
+											<div class="menu_desc">
+												영주시는 언제 어디서나 시민의 편의를 위해 민원서비스를 제공합니다.
+											</div>
+											<div class="menu_image_wrap">
+												<div class="menu_image"></div>
+											</div>
+										</div>
+										<div class="right side">
+											<div class="right_wrap">
+												<ul class="right_menu">
+													<li>
+														<span>행정정보공개</span>
+														<ul class="sub_menu">
+															<li>사전정보공표</li>
+															<li>제도안내</li>
+															<li>관련법령</li>
+															<li>정보공개청구</li>
+															<li>비공개 대상정보</li>
+															<li>정보공개목록</li>
+															<li>인사통계</li>
+															<li>정보목록(2014년 이전)</li>
+
+														</ul>
+													</li>
+													<li>
+														<span>공공데이터개방</span>
+														<ul class="sub_menu">
+															<li>공공정보 개방정책</li>
+															<li>법제도</li>
+															<li>공공정보 목록</li>
+															<li>공공데이터 포털</li>
+															<li>공공와이파이</li>
+
+														</ul>
+													</li>
+													<li>
+														<span>정책실명제</span>
+														<ul class="sub_menu">
+															<li>정책실명제 안내</li>
+															<li>2021 공개과제</li>
+															<li>2020 공개과제</li>
+															<li>이전 공개과제</li>
+															<li>국민신청 실명제</li>
+
+														</ul>
+													</li>
+													<li>
+														<span>알림마당</span>
+														<ul class="sub_menu">
+															<li>공지사항</li>
+															<li>고시/공고</li>
+															<li>입찰공고</li>
+															<li>입법예고</li>
+															<li>채용공고</li>
+															<li>타기관 소식/공고</li>
+															<li>보도자료</li>
+															<li>설명/해명자료</li>
+															<li>영주 인터넷 신문</li>
+															<li>민방위 안내</li>
+															<li>부서별 주요업무계획</li>
+															<li>토양 대기 수질</li>
+															<li>공동 주택 현황</li>
+															<li>석면 관리 정보</li>
+															<li>지방보조금</li>
+															<li>환경소식</li>
+															<li>전문 건설업</li>
+															<li>업무추진비</li>
+														</ul>
+													</li>
+													<li>
+														<span>행정자료실</span>
+														<ul class="sub_menu">
+															<li>영주시보</li>
+															<li>통계</li>
+															<li>시정백서</li>
+															<li>자치법규</li>
+															<li>달라지는 법령제도</li>
+															<li>도시 기본계획</li>
+															<li>정책연구용역</li>
+
+														</ul>
+													</li>
+													<li>
+														<span>지방공기업</span>
+														<ul class="sub_menu">
+															<li>지방공기업이란</li>
+															<li>지방공기업 현황</li>
+															<li>지방공기업 경영정보</li>
+															<li>산하 지방공기업 결산정보</li>
+
+														</ul>
+													</li>
+													<li>
+														<span>조직정보</span>
+														<ul class="sub_menu">
+															<li>조직정보(2021)</li>
+															<li>조직정보(2020하반기)</li>
+															<li>조직정보(2020상반기)</li>
+															<li>조직정보(2019하반기)</li>
+															<li>조직정보(2019상반기)</li>
+
+														</ul>
+													</li>
+													<li>
+														<span>행정서비스헌장</span>
+														<ul class="sub_menu">
+															<li>헌장전문</li>
+															<li>보상조치</li>
+															<li>시민협조사항</li>
+
+														</ul>
+													</li>
+													<li>
+														<span>행정절차제도</span>
+														<ul class="sub_menu">
+															<li>행정절차제도안내</li>
+															<li>행정처분기준</li>
+
+														</ul>
+													</li>
+
+
+												</ul>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</li>
+							<li>
+								<span>분야별정보</span>
+								<div class="tab">
+									<div class="tab_wrap">
+										<div class="left side">
+											<div class="menu_subject">
+												분야별 정보
+											</div>
+											<div class="menu_desc">
+												영주시는 언제 어디서나 시민의 편의를 위해 민원서비스를 제공합니다.
+											</div>
+											<div class="menu_image_wrap">
+												<div class="menu_image"></div>
+											</div>
+										</div>
+										<div class="right side">
+											<div class="right_wrap">
+												<ul class="right_menu">
+													<li>
+														<span>복지정책</span>
+														<ul class="sub_menu">
+															<li>지역사회보장계획</li>
+															<li>사회복지 시설현황</li>
+															<li>보훈단체 현황</li>
+
+														</ul>
+													</li>
+													<li>
+														<span>복지서비스</span>
+														<ul class="sub_menu">
+															<li>지역사회서비스 투자산업</li>
+															<li>종합사회복지관</li>
+															<li>긴급지원</li>
+															<li>맞춤형 복지서비스</li>
+															<li>지역사회보장협의체</li>
+
+														</ul>
+													</li>
+													<li>
+														<span>기초생활보장</span>
+														<ul class="sub_menu">
+															<li>국민기초생활보장제도</li>
+															<li>복지금여지원</li>
+															<li>의료급여지원</li>
+															<li>주거안정지원사업</li>
+
+														</ul>
+													</li>
+													<li>
+														<span>자활사업</span>
+														<ul class="sub_menu">
+															<li>자활사업</li>
+															<li>자활관련시설</li>
+
+														</ul>
+													</li>
+													<li>통합조사</li>
+													<li>
+														<span>장애인 복지</span>
+														<ul class="sub_menu">
+															<li>복지사업안내</li>
+															<li>장애인 단체 시설 현황</li>
+
+														</ul>
+													</li>
+													<li>
+														<span>노인복지</span>
+														<ul class="sub_menu">
+															<li>노인복지사업</li>
+															<li>영주시립양로원(무료)</li>
+															<li>노인요양시설</li>
+															<li>재가복지시설</li>
+															<li>노인복지관</li>
+															<li>장묘업무</li>
+
+														</ul>
+													</li>
+													<li>자원봉사</li>
+													<li>복지위기가구도움요청</li>
+
+												</ul>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+
+			</div>
+			<div id="wrap_wrap" class="white">
+				<div id="header_search">
+					<div id="h_search">
+						<form id="search_orderForm">
+							<span class="cellStyle">
+								<select id="familysite12"
+									style="width:140px;height:40px; background-color: white; position: relative; left: 30px; border: none; ">
+									<option value="Family site">통합검색</option>
+									<option value="Family site">담당업무</option>
+									<option value="Family site">직원검색</option>
+
+								</select>
+							</span>
+							<div class="container-1">
+								<div class="icon"></div>
+								<input type="text" id="search" autocomplete="off" placeholder="Search..." />
+							</div>
+						</form>
+
+					</div>
+
+				</div>
+			</div>
+		</header><!-- 헤더 끝 -->
+		<!-- 헤더 끝 -->
+
+
+		<section>
+
+			<div id="con_banner">
+				<ul class="introduce" >
+					<li>
+						<a href="#none"></a>
+						
+						 
+					</li>
+					<li>
+						<a href="#none"></a>
+					   
+					 
+				  
+					</li>
+					<li>
+						<a href="#none"></a>
+				 
+				 
+					</li>
+					<li>
+						<a href="#none"></a>
+					   
+					 
+				  
+					</li>
+					<li>
+						<a href="#none"></a>
+					   
+					 
+				  
+					</li>
+					<li>
+						<a href="#none"></a>
+					   
+					 
+				  
+					</li>
+					<li>
+						<a href="#none"></a>
+					   
+					 
+				  
+					</li>
+					<li>
+						<a href="#none"></a>
+					   
+					 
+				  
+					</li>
+					<li>
+						<a href="#none"></a>
+					   
+					 
+				  
+					</li>
+				</ul>
+				<div id="control_menu1">
+					<ul>
+						<li class="arrow_left"><img src="./images/left/ic20left2.png" alt="재생컨트롤"></li>
+						<li><a href="#layer2" class="btn-example"><img src="./images/left/ic20plus2.png" alt="재생컨트롤"></a></li>
+						<li class="arrow_right"><img src="./images/left/ic20right2.png" alt="재생컨트롤"></li>			
+					</ul>
+				
+					<div class="dim-layer">
+						<div class="dimBg"></div>
+						<div id="layer2" class="pop-layer">
+						
+							<div class="pop-container">
+								<div class="pop-conts">
+				 
+
+									<ul>
+										<li><img src="./images/banner/12.jpg" width="300" height="200" alt="banner_mini"></li>
+										<li><img src="./images/banner/23.jpg" width="300" height="200" alt="banner_mini"></li>
+										<li><img src="./images/banner/34.jpg" width="300" height="200" alt="banner_mini"></li>
+										<li><img src="./images/banner/45.jpg" width="300" height="200" alt="banner_mini"></li>
+										<li><img src="./images/banner/56.jpg" width="300" height="200" alt="banner_mini"></li>
+										<li><img src="./images/banner/67.jpg" width="300" height="200" alt="banner_mini"></li>
+										<li><img src="./images/banner/78.jpg" width="300" height="200" alt="banner_mini"></li>
+										<li><img src="./images/banner/89.jpg" width="300" height="200" alt="banner_mini"></li>
+										<li><img src="./images/banner/90.jpg" width="300" height="200" alt="banner_mini"></li>
+
+									</ul>
+			
+									<div class="btn-r">
+								
+										<a href="#none" class="btn-layerClose">닫기</a>
+									</div>
+									<!--// content-->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="con_news">
+				<div id="news">
+					<div class="tab">
+						<h2>뉴스보기</h2>
+						<ul class="tabnav">
+							<li><a href="#tab01">코로나19</a></li>
+							<li><a href="#tab02">공지사항</a></li>
+							<li><a href="#tab03">고시/공고</a></li>
+							<li><a href="#tab04">채용공고</a></li>
+							<li><a href="#tab05">입법예고</a></li>
+							<li><a href="#tab06">입찰공고</a></li>
+						</ul>
+						<div class="tabcontent">
+
+							<div id="tab01">
+
+								<div class="tab02">
+									<div class="tab02_left">
+										<span class="tab_big">25일</span>
+										2022년 5월
+
+									</div>
+									<div class="tab02_right">
+										<div class="tab02_box">
+											<span> 사회적 거리두기 의무화 조치 해제 안내</span>
+											<span>재난안전대책본부</span>
+										</div>
+										<span>오미크론이 정점을 지나 확연한 감소세로 돌아선 유행상황과 안정적으로
+											유지되고 있는 의료대응체계 등 방역상황 전반에 대하여 평가한 결과,
+
+											새로운 일상을 준비하기 위한 방역완화 조치가 필요하다고 판단 돌아선 유행상황과 안정적으로 유지되고 있는 의료대응체계 등 방역상황 전반,
+											...
+										</span>
+
+									</div>
+								</div>
+								<ul class="tab03">
+									<li>
+										<a href="#none"> </a>
+										<span class="t1">2022영주세계풍기인삼엑스포 판매시설(농.특산품) 운영</span>
+										<span class="t2">2022-03-03</span>
+									</li>
+									<li>
+										<a href="#none"> </a>
+										<span class="t1">2022년도 제1회 경상북도 지방공무원 경력경쟁 및 공개경쟁임용시험 영주시 최종합격자 임용후보자 등록
+											안내</span>
+										<span class="t2">2022-03-03</span>
+									</li>
+									<li>
+										<a href="#none"> </a>
+										<span class="t1"> 2022년 농부크리에이터 양성 및 콘텐츠 제작 과정 교육생 모집</span>
+										<span class="t2">2022-03-03</span>
+									</li>
+									<li>
+										<a href="#none"> </a>
+										<span class="t1"> 구미 인동 하늘채 디어반 2차 장애인 특별공급 신청 안내</span>
+										<span class="t2">2022-03-03</span>
+									</li>
+									<li>
+										<a href="#none"> </a>
+										<span class="t1"> 「2022년 농식품산업 경영컨설팅 지원사업」계획 알림</span>
+										<span class="t2">2022-03-03</span>
+									</li>
+
+								</ul>
+
+
+
+							</div>
+							<div id="tab02">
+
+								<div class="tab02">
+									<div class="tab02_left">
+										<span class="tab_big">25일</span>
+										2022년 5월
+
+									</div>
+									<div class="tab02_right">
+										<div class="tab02_box">
+											<span> 「2022년 농식품산업 경영컨설팅 지원사업」계획 알림</span>
+											<span>유통지원과</span>
+										</div>
+										<span>경상북도에서는 농식품 제조‧가공업체의 경영, 제품개발, 홍보·마케팅 등 맞춤형 컨설팅 지원으로 지속적 성장 및 수익창출 유도를
+											위해「2022년 농식품산업 경영컨설팅 지원사업」을 추진하고 있습니다.
+
+											가. 사 업 량 : 현장컨설팅 22개소, 창업 상담회 1회(40개소 정도)
+											나. 사 업 비 : 61백만원(도비 50, 자부담 11)
+											...
+										</span>
+
+									</div>
+								</div>
+								<ul class="tab03">
+									<li>
+										<a href="#none"> </a>
+										<span class="t1"> 영주시 소재 농업인 및 농업인 배우자 대상 신·편입생 모집 및 장학안내</span>
+										<span class="t2">2022-03-03</span>
+									</li>
+									<li>
+										<a href="#none"> </a>
+										<span class="t1"> 노인맞춤돌봄서비스 전담사회복지사 채용공고</span>
+										<span class="t2">2022-03-03</span>
+									</li>
+									<li>
+										<a href="#none"> </a>
+										<span class="t1"> 2022년 5월 영주시 정수장별 수돗물 수질검사 결과 안내</span>
+										<span class="t2">2022-03-03</span>
+									</li>
+									<li>
+										<a href="#none"> </a>
+										<span class="t1"> 「청렴경북 유튜브 영상 공모전」 참여 홍보</span>
+										<span class="t2">2022-03-03</span>
+									</li>
+									<li>
+										<a href="#none"> </a>
+										<span class="t1"> 2022년 선도농업인 활용 멘토링 교육사업 멘티(교육생) 모집 안내
+										</span>
+										<span class="t2">2022-03-03</span>
+									</li>
+
+								</ul>
+
+
+
+							</div>
+
+							<div id="tab03">
+
+								<div class="tab02">
+									<div class="tab02_left">
+										<span class="tab_big">25일</span>
+										2022년 5월
+
+									</div>
+									<div class="tab02_right">
+										<div class="tab02_box">
+											<span> 제안서 평가위원회 평가결과 공고</span>
+											<span>문화예술과</span>
+										</div>
+										<span>붙임 참조
+											...
+										</span>
+
+									</div>
+								</div>
+								<ul class="tab03">
+									<li>
+										<a href="#none"> </a>
+										<span class="t1">「안전한 외식환경 조성사업」 보조사업자 추가 모집 공고</span>
+										<span class="t2">2022-03-03</span>
+									</li>
+									<li>
+										<a href="#none"> </a>
+										<span class="t1">「2022년 일반음식점 입식테이블 설치지원사업」 보조사업자 2차 추가모집 공고</span>
+										<span class="t2">2022-03-03</span>
+									</li>
+									<li>
+										<a href="#none"> </a>제3종시설물 지정 고시(용두교)</span>
+										<span class="t2">2022-03-03</span>
+									</li>
+									<li>
+										<a href="#none"> </a>
+										<span class="t1"> 미등기토지 소유자 주소정정 공고(박승*)</span>
+										<span class="t2">2022-03-03</span>
+									</li>
+									<li>
+										<a href="#none"> </a>
+										<span class="t1"> 폐기물관리법위반 과태료 반송고지서 공시송달 공고</span>
+										<span class="t2">2022-03-03</span>
+									</li>
+
+								</ul>
+
+
+
+							</div>
+							<div id="tab04">
+
+								<div class="tab02">
+									<div class="tab02_left">
+										<span class="tab_big">25일</span>
+										2022년 5월
+
+									</div>
+									<div class="tab02_right">
+										<div class="tab02_box">
+											<span> 선비세상 운영본부(수탁사) 직원채용 최종합격자 공고</span>
+											<span>선비세상사업단</span>
+										</div>
+										<span>선비세상 운영본부((주)유니모토 컨소시엄사) 직원 공개채용 결과 최종합격자를 다음과 같이 공고합니다.
+
+											...
+										</span>
+
+									</div>
+								</div>
+								<ul class="tab03">
+									<li>
+										<a href="#none"> </a>
+										<span class="t1"> 2022년 영주실내수영장 안전요원, 수영강사 채용 면접 공고
+										</span>
+										<span class="t2">2022-03-03</span>
+									</li>
+									<li>
+										<a href="#none"> </a>
+										<span class="t1"> 2022년도 계량기 정기검사 보조원 모집 공고
+										</span>
+										<span class="t2">2022-03-03</span>
+									</li>
+									<li>
+										<a href="#none"> </a>
+										<span class="t1"> 2022년 하반기 공공근로사업 참여자 모집 공고
+										</span>
+										<span class="t2">2022-03-03</span>
+									</li>
+									<li>
+										<a href="#none"> </a>
+										<span class="t1">2022년 하반기 지역공동체일자리사업 참여자 모집 공고
+										</span>
+										<span class="t2">2022-03-03</span>
+									</li>
+									<li>
+										<a href="#none"> </a>
+										<span class="t1"> 2022 풍기읍 하천하구 쓰레기 정화사업 기간제근로자 채용 공고
+										</span>
+										<span class="t2">2022-03-03</span>
+									</li>
+
+								</ul>
+
+
+
+							</div>
+
+							<div id="tab05">
+
+								<div class="tab02">
+									<div class="tab02_left">
+										<span class="tab_big">25일</span>
+										2022년 5월
+
+									</div>
+									<div class="tab02_right">
+										<div class="tab02_box">
+											<span>「영주시 건축물관리 조례」 제정 조례안 입법예고
+											</span>
+											<span>건축과</span>
+										</div>
+										<span>「영주시 건축물 관리조례」를 제정함에 있어 제정이유와 주요내용을 시민들에게 알리고, 이에 대한 의견을 듣고자「행정절차법」제41조에
+											따라 다음과 같이 공고합니다
+											...
+										</span>
+
+									</div>
+								</div>
+								<ul class="tab03">
+									<li>
+										<a href="#none"> </a>
+										<span class="t1"> 영주시 도시계획 조례 일부개정조례안 입법예고
+										</span>
+										<span class="t2">2022-03-03</span>
+									</li>
+									<li>
+										<a href="#none"> </a>
+										<span class="t1"> 「영주시 건축 조례」 일부개정조례안 입법예고
+										</span>
+										<span class="t2">2022-03-03</span>
+									</li>
+									<li>
+										<a href="#none"> </a>
+										<span class="t1"> 「영주시 농축산물 가격안정기금 설치 및 운용 조례」일부개정조례안 입법예고</span>
+										<span class="t2">2022-03-03</span>
+									</li>
+									<li>
+										<a href="#none"> </a>
+										<span class="t1"> 「영주시 선비세상 관리 및 운영에 관한 조례」일부개정조례안 입법예고</span>
+										<span class="t2">2022-03-03</span>
+									</li>
+									<li>
+										<a href="#none"> </a>
+										<span class="t1"> 영주시 도시재생 활성화 및 지원에 관한 조례 일부 개정 조례안</span>
+										<span class="t2">2022-03-03</span>
+									</li>
+
+								</ul>
+
+
+
+							</div>
+							<div id="tab06">
+
+								<div class="tab02">
+									<div class="tab02_left">
+										<span class="tab_big">25일</span>
+										2022년 5월
+
+									</div>
+									<div class="tab02_right">
+										<div class="tab02_box">
+											<span> 사회적 거리두기 의무화 조치 해제 안내</span>
+											<span>재난안전대책본부</span>
+										</div>
+										<span>오미크론이 정점을 지나 확연한 감소세로 돌아선 유행상황과 안정적으로
+											유지되고 있는 의료대응체계 등 방역상황 전반에 대하여 평가한 결과,
+
+											새로운 일상을 준비하기 위한 방역완화 조치가 필요하다고 판단 돌아선 유행상황과 안정적으로 유지되고 있는 의료대응체계 등 방역상황 전반,
+											...
+										</span>
+
+									</div>
+								</div>
+								<ul class="tab03">
+									<li>
+										<a href="#none"> </a>
+										<span class="t1"> 계적 일상회복 지속을 단계적 일상회복 지속을 위단계적 일상회복 지속을 위한 거리두기 변경 안내단계적 일상회복
+											지속을 위한</span>
+										<span class="t2">2022-03-03</span>
+									</li>
+									<li>
+										<a href="#none"> </a>
+										<span class="t1"> 계적 일상회복 지속을 단계적 일상회복 지속을 위단계적 일상회복 지속을 위한 거리두기 변경 안내단계적 일상회복
+											지속을 위한</span>
+										<span class="t2">2022-03-03</span>
+									</li>
+									<li>
+										<a href="#none"> </a>
+										<span class="t1"> 계적 일상회복 지속을 단계적 일상회복 지속을 위단계적 일상회복 지속을 위한 거리두기 변경 안내단계적 일상회복
+											지속을 위한</span>
+										<span class="t2">2022-03-03</span>
+									</li>
+									<li>
+										<a href="#none"> </a>
+										<span class="t1"> 계적 일상회복 지속을 단계적 일상회복 지속을 위단계적 일상회복 지속을 위한 거리두기 변경 안내단계적 일상회복
+											지속을 위한</span>
+										<span class="t2">2022-03-03</span>
+									</li>
+									<li>
+										<a href="#none"> </a>
+										<span class="t1"> 계적 일상회복 지속을 단계적 일상회복 지속을 위단계적 일상회복 지속을 위한 거리두기 변경 안내단계적 일상회복
+											지속을 위한</span>
+										<span class="t2">2022-03-03</span>
+									</li>
+
+								</ul>
+
+
+
+							</div>
+						</div>
+
+					</div>
+					<!--tab-->
+
+				</div>
+				<div id="mayor">
+
+					<div id="mayor_top">
+						<div class="civil">
+							시민이 주인입니다 <br> &nbsp;&nbsp; &nbsp;&nbsp; - 장욱현 -
+						</div>
+						<div class="img"> </div>
+						<div class="img2">
+
+						</div>
+						<ul>
+							<li><a href="#none">인사말</a></li>
+							<li><a href="#none">민선 7기 공약사항</a></li>
+						</ul>
+
+					</div>
+					<div id="mayor_bot">
+						<ul>
+							<li><img src="./images/mayormenu1.png" alt="로고1"><a href="#none">시장에게</a></li>
+							<li><img src="./images/mayormenu2.png" alt="로고1"><a href="#none">시청소개</a></li>
+							<li><img src="./images/mayormenu3.png" alt="로고1"><a href="#none">행정조직</a></li>
+							<li><img src="./images/mayormenu4.png" alt="로고1"><a href="#none">오시는길</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div id="con_popup">
+
+				<div id="con_website">
+					<div class="tab">
+						<ul class="tabnavv">
+							<li><a href="#tab011">주요사이트</a></li>
+							<li><a href="#tab022">자주찾는 페이지</a></li>
+						</ul>
+						<div class="tabcontentt">
+
+
+
+							<div id="tab011">
+								<div class="tab02">
+									<div class="tab02_left">
+										<ul>
+											<li style="margin-top: 0px;"><img src="./images/ingu/internet-news.png"
+													alt="로고1"><a href="#none">인터넷신문</a></li>
+											<li style="margin-top: 20px;"><img src="./images/ingu/medicine.png"
+													alt="로고1"><a href="#none">의료보건</a></li>
+											<li style="margin-top: 30px;"><img src="./images/ingu/city-tour.png"
+													alt="로고1"><a href="#none">시티투어</a></li>
+											<li style="margin-top: 22px;"><img src="./images/ingu/water.png"
+													alt="로고1"><a href="#none">수도사업</a></li>
+
+
+										</ul>
+
+									</div>
+									<div class="tab02_right">
+										<ul>
+											<li><img src="./images/ingu/art-square.png" alt="로고1"><a href="#none">아트스퀘어</a>
+											</li>
+											<li><img src="./images/ingu/see_real.png" alt="로고1"><a href="#none">씨ㅣ리얼</a>
+											</li>
+											<li><img src="./images/ingu/school-whole-life.png" alt="로고1"><a
+													href="#none">평생학습</a></li>
+											<li><img src="./images/ingu/job-seeker.png" alt="로고1"><a href="#none">취업정보</a>
+											</li>
+											<li><img src="./images/ingu/tie.png" alt="로고1"><a href="#none">정부24</a></li>
+											<li><img src="./images/ingu/tax.png" alt="로고1"><a href="#none">위택스</a></li>
+											<li><img src="./images/ingu/bus.png" alt="로고1"><a href="#none">종합터미널</a>
+											</li>
+											<li><img src="./images/ingu/budong.png" alt="로고1"><a href="#none">부동산신고</a></li>
+											<li><img src="./images/ingu/soldier.png" alt="로고1"><a href="#none">민방위훈련</a>
+											</li>
+											<li><img src="./images/ingu/soccer-player.png" alt="로고1"><a
+													href="#none">체육시설</a>
+											</li>
+											<li><img src="./images/ingu/damoonwha.png" alt="로고1"><a href="#none">다문화지원</a>
+											</li>
+											<li><img src="./images/ingu/safety.png" alt="로고1"><a href="#none">안전드림</a></li>
+											<li><img src="./images/ingu/inbang.png" alt="로고1"><a href="#none">인터넷방송</a>
+											</li>
+											<li><img src="./images/ingu/earth.png" alt="로고1"><a href="#none">환경사업소</a></li>
+											<li><img src="./images/ingu/ginseng.png" alt="로고1"><a href="#none">인삼박물관</a>
+											</li>
+											<li><img src="./images/ingu/working.png" alt="로고1"><a href="#none">여성일센터</a>
+											</li>
+
+										</ul>
+
+
+
+									</div>
+								</div>
+
+
+
+							</div>
+							<div class="tab02">
+								<ul>
+									<li><img src="./images/mayormenu1.png" alt="로고1"><a href="#none">시장에게</a></li>
+									<li><img src="./images/mayormenu2.png" alt="로고1"><a href="#none">시청소개</a></li>
+									<li><img src="./images/mayormenu3.png" alt="로고1"><a href="#none">행정조직</a></li>
+									<li><img src="./images/mayormenu4.png" alt="로고1"><a href="#none">오시는길</a></li>
+								</ul>
+							</div>
+
+
+
+
+							<div id="tab022">
+								<div class="tab02">
+									<div class="tab002_left">
+										<ul>
+											<li style="margin-top: 0px;"><img src="./images/ingu/art-square.png"
+													alt="로고1"><a href="#none">민원신청</a></li>
+											<li style="margin-top: 20px;"><img src="./images/ingu/bill.png" alt="로고1"><a
+													href="#none">시정예산</a></li>
+											<li style="margin-top: 30px;"><img src="./images/ingu/edu.png" alt="로고1"><a
+													href="#none">재정공시</a></li>
+											<li style="margin-top: 22px;"><img src="./images/ingu/moon.png" alt="로고1"><a
+													href="#none">현수막신청</a></li>
+
+
+										</ul>
+
+									</div>
+									<div class="tab002_right">
+										<ul>
+											<li><img src="./images/ingu/minwon.png" alt="로고1"><a href="#none">통계</a></li>
+											<li><img src="./images/ingu/eco.png" alt="로고1"><a href="#none">영주소식</a></li>
+											<li><img src="./images/ingu/youth.png" alt="로고1"><a href="#none">아동친화</a></li>
+											<li><img src="./images/ingu/money-bag.png" alt="로고1"><a href="#none">영주상품권</a>
+											</li>
+											<li><img src="./images/ingu/hongbo.png" alt="로고1"><a href="#none">질문하기</a></li>
+											<li><img src="./images/ingu/safety.png" alt="로고1"><a href="#none">행정조직</a></li>
+											<li><img src="./images/ingu/company.png" alt="로고1"><a href="#none">시장에게</a>
+											</li>
+											<li><img src="./images/ingu/company.png" alt="로고1"><a href="#none">시청소개</a></li>
+											<li><img src="./images/ingu/money-bag.png" alt="로고1"><a href="#none">행정조직</a>
+											</li>
+											<li><img src="./images/ingu/tie.png" alt="로고1"><a href="#none">시장에게</a>
+											</li>
+											<li><img src="./images/ingu/hongbo.png" alt="로고1"><a href="#none">시청소개</a></li>
+											<li><img src="./images/ingu/free-icon-medicine-6227727.png" alt="로고1"><a
+													href="#none">행정조직</a></li>
+											<li><img src="./images/ingu/job-seeker.png" alt="로고1"><a href="#none">시장에게</a>
+											</li>
+											<li><img src="./images/ingu/hongbo.png" alt="로고1"><a href="#none">시청소개</a></li>
+											<li><img src="./images/ingu/free-icon-medicine-6227727.png" alt="로고1"><a
+													href="#none">행정조직</a></li>
+											<li><img src="./images/ingu/job-seeker.png" alt="로고1"><a href="#none">시장에게</a>
+											</li>
+
+										</ul>
+
+
+
+									</div>
+								</div>
+
+
+
+							</div>
+							<div class="tab02">
+								<ul>
+									<li><img src="./images/mayormenu1.png" alt="로고1"><a href="#none">시장에게</a></li>
+									<li><img src="./images/mayormenu2.png" alt="로고1"><a href="#none">시청소개</a></li>
+									<li><img src="./images/mayormenu3.png" alt="로고1"><a href="#none">행정조직</a></li>
+									<li><img src="./images/mayormenu4.png" alt="로고1"><a href="#none">오시는길</a></li>
+								</ul>
+							</div>
+
+
+
+						</div>
+					</div>
+
+				</div>
+				<div id="con_popupp">
+
+
+					<div id="h_weather">
+						<div class="api">
+							<div class="api_wrap">
+								<div class="cicon"></div>
+								<div class="temp_info">
+									<div class="date"></div>
+									<div class="cname"></div><!-- 도시이름 -->
+									<div class="ctemp">현재온도</div>
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div id="popup_title" class="none">
+
+					</div>
+					<div id="popup_wrap">
+						<div id="poop" class=" ">
+							<div class="visual1  ">
+								<ul>
+									<li class="visu_1" style="left:0">
+										<div class="section1"></div>
+
+									</li>
+									<li class="visu_2">
+										<div class="section2"></div>
+									</li>
+									<li class="visu_3">
+										<div class="section3"></div>
+
+									</li>
+									<li class="visu_4">
+										<div class="section4"></div>
+									</li>
+									<li class="visu_5">
+										<div class="section5"></div>
+
+									</li>
+									<li class="visu_6">
+										<div class="section6"></div>
+
+									</li>
+									<li class="visu_7">
+										<div class="section7"></div>
+
+									</li>
+
+								</ul>
+								<div id="section_arrow">
+									<div class="arrow1">
+										<div class="arrow1_1">
+											<div class="arrow1_1_center">
+												<img src="images/left/ic20left2.png" width="16" height="16" alt=""
+													class="prev fl" />
+												<img src="images/left/ic20right2.png" width="16" height="16" alt=""
+													class="next fr" />
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="section_number">
+									<p class="bl">1/7</p>
+									<p>2/7</p>
+									<p>3/7</p>
+									<p>4/7</p>
+									<p>5/7</p>
+									<p>6/7</p>
+									<p>7/7</p>
+								</div>
+							</div>
+						</div>
+						<div id="popup_right">
+							<ul class="open">
+								<li> 영주시 지진대피소 </li>
+								<li> 영주시 강우량 정보 </li>
+								<li> 영주시 공기질 현황 </li>
+								<li> 영주 사랑복지몰 </li>
+							</ul>
+
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+			<div id="con_news_tour">
+
+				<div id="internet_news">
+					<div class="inn_top">영주 소식 한눈에 보기</div>
+					<div class="inn">
+						<div class="inn_bot"><span>최신뉴스</span>
+							<ul class="inn_bot1" id="inn_bot1">
+								<li><a href="#none"></a></li>
+								<li id="upthis1"><a href="#none">‘한발 늦게 피는 봄꽃 ‘영주 소백산 철쭉 보러오세요’<br>2022-05-25<br><br>  소백산 능선에 철쭉군락이 장관을 이루며 온‧오프라인으로 다채롭게 펼쳐진다.
+
+								</a></li>
+							</ul>
+
+						</div>
+						<div class="inn_bot"><span>인기뉴스</span>
+							<ul class="inn_bot2" id="inn_bot2">
+								<li><a href="#none"></a></li>
+								<li id="upthis2"><a href="#none">3년 만에 열린 ‘한국선비문화축제’…관광산업 ‘기지개’<br>2022-06-05<br><br>‘한국의 뿌리,선비정신’이라는 주제로 다채로운 온‧오프라인 프로그램이 운영됐다.</a></li>
+							</ul>
+						</div>
+						<div class="inn_bot"><span>사진뉴스</span>
+							<ul class="inn_bot3" id="inn_bot3">
+								<li><a href="#none"></a></li>
+								<li id="upthis3"><a href="#none">영주시, 소백산 철쭉 군락지 복원사업 지속 <br>2022-06-05<br><br>경북 영주시와 소백산국립공원관리사무소가 철쭉군락지 복원에 나서고 있다.</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<input type="checkbox" id="change" style="display: none;">
+				<div id="vr_tour">
+					<div id="control_menu2">
+						<div>
+							<label for="change" class='button'><span class="vr_message">vr tour!</span>
+							</label>
+							<label for="change" class='button'>	<span class="vr_message2"> =3 </span></label> 
+						</div>
+					</div>
+					<div id="control_menu3">
+
+						<a href="#none" target="_blank">
+						</a>
+					</div>
+				 	<div id="control_menu2back">
+						 <ul>
+							 <li><a href="#none"><img src="./images/vr_tour/vr1.gif" alt="vr_tour"></a></li>
+							 <li><a href="#none"><img src="./images/vr_tour/vr2.gif" alt="vr_tour"></a></li>
+							 <li><a href="#none"><img src="./images/vr_tour/vr3.gif" alt="vr_tour"></a></li>
+							 <li><a href="#none"><img src="./images/vr_tour/vr5.gif" alt="vr_tour"></a></li>
+							 <li><a href="#none"><img src="./images/vr_tour/vr6.gif" alt="vr_tour"></a></li>
+							 <li><a href="#none"><img src="./images/vr_tour/vr7.gif" alt="vr_tour"></a></li>
+							 <li><a href="#none"><img src="./images/vr_tour/vr8.gif" alt="vr_tour"></a></li>
+							 <li><a href="#none"><img src="./images/vr_tour/vr9.gif" alt="vr_tour"></a></li>
+							 <li><a href="#none"><img src="./images/vr_tour/vr11.gif" alt="vr_tour"></a></li>
+						 </ul>
+					 
+					</div>
+ 
+				</div>
+			</div>
+
+		</section><!-- 섹션 끝 -->
+		<!-- 섹션 끝 -->
+
+
+		<footer id="footer">
+			<div id="wrap_gray" class="gray">
+				<div id="familysite">
+					<nav class="navf">
+						<ul class="nav-wrap cf">
+							<li>
+								<a href="#none" class="navBt">행정복지센터</a>
+								<ul class="sub">
+									<li><a href="#none">풍기읍</a></li>
+									<li><a href="#none">이산면</a></li>
+									<li><a href="#none">평은면</a></li>
+									<li><a href="#none">문수면</a></li>
+									<li><a href="#none">장수면</a></li>
+									<li><a href="#none">안정면</a></li>
+									<li><a href="#none">봉현면</a></li>
+									<li><a href="#none">순흥면</a></li>
+									<li><a href="#none">단산면</a></li>
+									<li><a href="#none">상망동</a></li>
+									<li><a href="#none">하망동</a></li>
+									<li><a href="#none">영주1동</a></li>
+									<li><a href="#none">영주2동</a></li>
+								</ul>
+							</li>
+							<li><a href="#none" class="navBt">유관기관</a>
+								<ul class="sub">
+									<li><a href="#none">영주경찰서</a></li>
+									<li><a href="#none">영주소방서</a></li>
+									<li><a href="#none">영주교육지원청</a></li>
+									<li><a href="#none">영주문화원</a></li>
+									<li><a href="#none">영주고용노동지청</a></li>
+									<li><a href="#none">경북북부보훈지청</a></li>
+									<li><a href="#none">영주세무서</a></li>
+									<li><a href="#none">한국전기안전공사</a></li>
+									<li><a href="#none">동양대학교</a></li>
+									<li><a href="#none">영주시취업지원센터</a></li>
+								</ul>
+							</li>
+							<li><a href="#none" class="navBt">시군청홈페이지</a>
+								<ul class="sub">
+									<li><a href="#none">경북도청</a></li>
+									<li><a href="#none">포항시</a></li>
+									<li><a href="#none">경주시</a></li>
+									<li><a href="#none">김천시</a></li>
+									<li><a href="#none">안동시</a></li>
+									<li><a href="#none">구미시</a></li>
+									<li><a href="#none">영천시</a></li>
+									<li><a href="#none">상주시</a></li>
+									<li><a href="#none">문경시</a></li>
+									<li><a href="#none">경산시</a></li>
+									<li><a href="#none">군위군</a></li>
+									<li><a href="#none">의성군</a></li>
+									<li><a href="#none">청송군</a></li>
+									<li><a href="#none">영양군</a></li>
+									<li><a href="#none">영덕군</a></li>
+									<li><a href="#none">청도군</a></li>
+									<li><a href="#none">고령군</a></li>
+									<li><a href="#none">성주군</a></li>
+									<li><a href="#none">칠곡군</a></li>
+									<li><a href="#none">예천군</a></li>
+									<li><a href="#none">울진군</a></li>
+								</ul>
+							</li>
+							<li><a href="#none" class="navBt">패밀리사이트</a>
+								<ul class="sub">
+									<li><a href="#none">시의회</a></li>
+									<li><a href="#none">영주시립도서관</a></li>
+									<li><a href="#none">영주시인재육성장학회</a></li>
+									<li><a href="#none">영주시사이버시민</a></li>
+									<li><a href="#none">평생학습센터</a></li>
+									<li><a href="#none">영주장날</a></li>
+									<li><a href="#none">콩세계과학관</a></li>
+									<li><a href="#none">영주문화예술회관</a></li>
+									<li><a href="#none">영주시민회관</a></li>
+									<li><a href="#none">공공체육시설</a></li>
+									<li><a href="#none">영주문화관광재단</a></li>
+									<li><a href="#none">인삼박물관</a></li>
+									<li><a href="#none">보건소</a></li>
+									<li><a href="#none">수도사업소</a></li>
+									<li><a href="#none">소수서원관리사무소</a></li>
+									<li><a href="#none">농업기술센터</a></li>
+									<li><a href="#none">환경사업소</a></li>
+									<li><a href="#none">사이버홍보관</a></li>
+									<li><a href="#none">148아트스퀘어</a></li>
+									<li><a href="#none">천지인 전통사상체험관</a></li>
+									<li><a href="#none">영주실내수영장</a></li>
+								</ul>
+							</li>
+
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div id="wrap_bluee" class="blue">
+				<div id="footer_2">
+					<div id="f_left">
+						<div id="f_top">
+							<div id="f_top_right">
+
+								<ul>
+									<li>영주민원콜센터 &nbsp; &#58; &nbsp; </li>
+									<li>054-639-7777</li>
+
+
+								</ul>
+
+							</div>
+							<div id="f_top_left">
+								<ul>
+									<li>영주시(당직실) &nbsp; &#58; &nbsp; </li>
+									<li> 054-639-6222</li>
+
+								</ul>
+							</div>
+						</div>
+
+						<div id="f_bottom">
+							<ul>
+								<li><a href="#none">개인정보처리방침 </a></li>
+								<li><a href="#none">저작권정책 </a></li>
+								<li><a href="#none">이메일무단수집거부 </a></li>
+								<li><a href="#none">홈페이지 개선제안 </a></li>
+								<li><a href="#none">이용안내 </a></li>
+								<li><a href="#none">내PC지킴이 </a></li>
+								<li><a href="#none">찾아오시는 길 </a></li>
+								<li><a href="#none">사이트맵 </a></li>
+
+							</ul>
+
+						</div>
+
+					</div>
+					<div id="f_right">
+
+						<div id="f_logo">
+
+						</div>
+
+						<div id="f_social">
+							<ul>
+								<li><img src="./images/social/facebook_icon.png" alt="페이스북"><a href="#none"></a></li>
+								<li><img src="./images/social/instagram_icon.png" alt="인스타그램"><a href="#none"></a></li>
+								<li><img src="./images/social/youtube_icon.png" alt="유튜브"><a href="#none"></a></li>
+								<li><img src="./images/social/naverblog_icon.png" alt="네이버블로그"><a href="#none"></a></li>
+							</ul>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer><!-- 푸터 끝 -->
+
+
+
+
+
+	</div><!-- 전체 랩 -->
+
+
+</body>
+
+</html>

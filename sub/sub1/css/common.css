@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+
+@font-face {
+  font-family: 'Happiness-Sans-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Happiness-Sans-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ROEHOE-CHAN';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/ROEHOE-CHAN.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'Manse';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Manse.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-family: 'Noto Sans KR', 'Happiness-Sans-Bold', sans-serif;
+  letter-spacing: -1px;
+  line-height: normal;
+  font-stretch: normal;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.cf {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.cb {
+  clear: both;
+}
+
+
+
+/*  */
+
+::selection {
+  background: #6d50e2;
+  color: #fff;
+}
+
+.container {
+  max-width: 950px;
+  width: 100%;
+  padding: 5px;
+  padding-top: 50px;
+  background: #fff;
+  margin: 0 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container2 {
+  max-width: 950px;
+  width: 100%;
+  padding: 5px;
+  padding-top: 50px;
+  background: #fff;
+  margin: 0 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+  display: flex;
+  /*  align-items: center; */
+  justify-content: space-between;
+  padding-right: 20px;
+}
+
+.content .list {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin-right: 50px;
+  position: relative;
+}
+
+.content .list label {
+  height: 60px;
+  font-size: 14.5px;
+  font-weight: 500;
+  line-height: 60px;
+  cursor: pointer;
+  padding-left: 25px;
+  transition: all 0.5s ease;
+  color: #333;
+  z-index: 12;
+}
+.content2 {
+  display: flex;
+  /*  align-items: center; */
+  justify-content: space-between;
+  padding-right: 20px;
+}
+
+.content2 .list {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin-right: 50px;
+  position: relative;
+}
+
+.content2 .list label {
+  height: 60px;
+  font-size: 14.5px;
+  font-weight: 500;
+  line-height: 60px;
+  cursor: pointer;
+  padding-left: 25px;
+  transition: all 0.5s ease;
+  color: #333;
+  z-index: 12;
+}
+
+#home:checked~.list label.home,
+#blog:checked~.list label.blog,
+#help:checked~.list label.help,
+#code:checked~.list label.code,
+#about:checked~.list label.about {
+  color: #fff;
+}
+
+.content .list label:hover {
+  color: #6d50e2;
+}
+
+.content .slider {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  border-radius: 12px;
+  background: #6d50e2;
+  transition: all 0.4s ease;
+}
+
+input[name=slider]:nth-child(1):checked~.list .slider {
+  top: -8px;
+  left: 12px;
+}
+
+input[name=slider]:nth-child(2):checked~.list .slider {
+  top: 62px;
+  left: 12px;
+}
+
+input[name=slider]:nth-child(3):checked~.list .slider {
+  top: 132px;
+  left: 12px;
+}
+
+input[name=slider]:nth-child(4):checked~.list .slider {
+  top: 201px;
+  left: 12px;
+}
+
+input[name=slider]:nth-child(5):checked~.list .slider {
+  top: 262px;
+  left: 12px;
+}
+
+
+
+.content .slider2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  border-radius: 12px;
+  background: #6d50e2;
+  transition: all 0.4s ease;
+}
+
+input[name=slider2]:nth-child(1):checked~.list .slider2 {
+  top: -8px;
+  left: 12px;
+}
+
+input[name=slider2]:nth-child(2):checked~.list .slider2 {
+  top: 62px;
+  left: 12px;
+}
+
+input[name=slider2]:nth-child(3):checked~.list .slider2 {
+  top: 132px;
+  left: 12px;
+}
+
+input[name=slider2]:nth-child(4):checked~.list .slider2 {
+  top: 201px;
+  left: 12px;
+}
+
+input[name=slider2]:nth-child(5):checked~.list .slider2 {
+  top: 262px;
+  left: 12px;
+}
+
+
+.content .slider3 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  border-radius: 12px;
+  background: #6d50e2;
+  transition: all 0.4s ease;
+}
+
+input[name=slider3]:nth-child(1):checked~.list .slider3 {
+  top: -18px;
+  left: 12px;
+}
+
+input[name=slider3]:nth-child(2):checked~.list .slider3 {
+  top: 52px;
+  left: 12px;
+}
+
+input[name=slider3]:nth-child(3):checked~.list .slider3 {
+  top: 132px;
+  left: 12px;
+}
+
+input[name=slider3]:nth-child(4):checked~.list .slider3 {
+  top: 201px;
+  left: 12px;
+}
+
+input[name=slider3]:nth-child(5):checked~.list .slider3 {
+  top: 262px;
+  left: 12px;
+}
+
+.content2 .slider4 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  border-radius: 12px;
+  background: #6d50e2;
+  transition: all 0.4s ease;
+}
+
+input[name=slider4]:nth-child(1):checked~.list .slider4 {
+  top: -18px;
+  left: 12px;
+}
+
+input[name=slider4]:nth-child(2):checked~.list .slider4 {
+  top: 52px;
+  left: 12px;
+}
+
+input[name=slider4]:nth-child(3):checked~.list .slider4 {
+  top: 132px;
+  left: 12px;
+}
+
+input[name=slider4]:nth-child(4):checked~.list .slider4 {
+  top: 201px;
+  left: 12px;
+}
+
+input[name=slider4]:nth-child(5):checked~.list .slider4 {
+  top: 262px;
+  left: 12px;
+}
+
+
+.content .text-content {
+  width: 80%;
+  height: 100%;
+}
+
+.content .text {
+  display: none;
+}
+
+.content .text .tittle {
+  font-size: 25px;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
+.content .text p {
+  text-align: justify;
+}
+
+.content .text-content .home {
+  display: block;
+}
+
+#home:checked~.text-content .home,
+#blog:checked~.text-content .blog,
+#help:checked~.text-content .help,
+#code:checked~.text-content .code,
+#about:checked~.text-content .about {
+  display: block;
+}
+
+#blog:checked~.text-content .home,
+#help:checked~.text-content .home,
+#code:checked~.text-content .home,
+#about:checked~.text-content .home {
+  display: none;
+}
+
+#home2:checked~.text-content .home,
+#blog2:checked~.text-content .blog,
+#help2:checked~.text-content .help,
+#code2:checked~.text-content .code,
+#about2:checked~.text-content .about {
+  display: block;
+}
+
+#blog2:checked~.text-content .home,
+#help2:checked~.text-content .home,
+#code2:checked~.text-content .home,
+#about2:checked~.text-content .home {
+  display: none;
+}
+
+#home3:checked~.text-content .home,
+#blog3:checked~.text-content .blog,
+#help3:checked~.text-content .help,
+#code3:checked~.text-content .code,
+#about3:checked~.text-content .about {
+  display: block;
+}
+
+#blog3:checked~.text-content .home,
+#help3:checked~.text-content .home,
+#code3:checked~.text-content .home,
+#about3:checked~.text-content .home {
+  display: none;
+}
+#home4:checked~.text-content .home,
+#blog4:checked~.text-content .blog,
+#help4:checked~.text-content .help,
+#code4:checked~.text-content .code,
+#about4:checked~.text-content .about {
+  display: block;
+}
+
+#blog4:checked~.text-content .home,
+#help4:checked~.text-content .home,
+#code4:checked~.text-content .home,
+#about4:checked~.text-content .home {
+  display: none;
+}
+
+.content input {
+  display: none;
+}
+
+
+
+#main_1 .tabnav li:hover,
+#main_1 .tabnav li.active {
+  background-color: #4b78a5;
+  color: white;
+}
+
+
+#main_2 .tabnav2 li:hover,
+#main_2 .tabnav2 li.active {
+  background-color: #4b78a5;
+  color: white;
+}
+
+ 
+
+.none {
+  display: none !important;
+}
+
+
+#home2:checked~.list label.home,
+#blog2:checked~.list label.blog,
+#help2:checked~.list label.help,
+#code2:checked~.list label.code,
+#about2:checked~.list label.about {
+  color: #fff;
+}
+#home3:checked~.list label.home,
+#blog3:checked~.list label.blog,
+#help3:checked~.list label.help,
+#code3:checked~.list label.code,
+#about3:checked~.list label.about {
+  color: #fff;
+}
+#home4:checked~.list label.home,
+#blog4:checked~.list label.blog,
+#help4:checked~.list label.help,
+#code4:checked~.list label.code,
+#about4:checked~.list label.about {
+  color: #fff;
+}
+
+.home ul li,
+.blog ul li,
+.help ul li,
+.code ul li,
+.about ul li{
+/*   background-color: wheat;
+ */  margin-bottom: 20px;
+  height: 30px;
+}
+.home ul li:before,
+.blog ul li:before,
+.help ul li:before,
+.code ul li:before,
+.about ul li:before{
+  content: url(../images/leaf.png);
+ 
+background-size: 30px;
+}
